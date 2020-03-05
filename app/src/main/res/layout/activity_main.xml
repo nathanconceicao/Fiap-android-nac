@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+android:id="@+id/MainActivity"
+>
+
+
+    <ImageView
+            android:id="@+id/magalu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/ebay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buscape"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/magaluiza"/>
+
+    <ImageView
+        android:id="@+id/buscape"
+        android:layout_width="162dp"
+        android:layout_height="166dp"
+        app:layout_constraintBottom_toTopOf="@+id/americanas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/magalu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/buscape" />
+
+    <ImageView
+        android:id="@+id/ebay"
+        android:layout_width="165dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toTopOf="@+id/mercado_livre"
+        app:layout_constraintEnd_toStartOf="@+id/americanas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magalu"
+        app:srcCompat="@drawable/ebay" />
+
+    <ImageView
+        android:id="@+id/americanas"
+        android:layout_width="218dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toTopOf="@+id/netshoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ebay"
+        app:layout_constraintTop_toBottomOf="@+id/buscape"
+        app:srcCompat="@drawable/americanas" />
+
+    <ImageView
+        android:id="@+id/mercado_livre"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        app:layout_constraintBottom_toTopOf="@+id/submarino"
+        app:layout_constraintEnd_toStartOf="@+id/netshoes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ebay"
+        app:srcCompat="@drawable/mercadolivre" />
+
+    <ImageView
+        android:id="@+id/netshoes"
+        android:layout_width="194dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/webmotors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mercado_livre"
+        app:layout_constraintTop_toBottomOf="@+id/americanas"
+        app:srcCompat="@drawable/netshoes" />
+
+    <ImageView
+        android:id="@+id/submarino"
+        android:layout_width="149dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/webmotors"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mercado_livre"
+        app:srcCompat="@drawable/submarino" />
+
+    <ImageView
+        android:id="@+id/webmotors"
+        android:layout_width="203dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/descricaoinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/submarino"
+        app:layout_constraintTop_toBottomOf="@+id/netshoes"
+        app:srcCompat="@drawable/webmotors"
+        android:src="@drawable/webmotors"/>
+
+    <Button
+        android:id="@+id/descricaoinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descricao info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/submarino"
+        app:layout_constraintTop_toBottomOf="@+id/webmotors" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
