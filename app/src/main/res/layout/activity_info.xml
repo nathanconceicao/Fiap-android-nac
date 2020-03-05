@@ -6,6 +6,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Info"
-android:id="@+id/Info">
+        android:id="@+id/info">
+
+
+    <TextView android:layout_width="129dp" android:layout_height="53dp"
+              android:text="Relatorio" android:id="@+id/relatorio" app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+              android:textSize="30sp" app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toTopOf="@+id/infoMagalu"/>
+    <TextView
+            android:text="Magalu"
+            android:layout_width="268dp"
+            android:layout_height="309dp"
+            android:id="@+id/infoMagalu"
+            app:layout_constraintTop_toBottomOf="@+id/relatorio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/limpar"/>
+    <Button
+            android:text="limpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/limpar" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoMagalu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
